@@ -1,0 +1,25 @@
+
+/*
+注意:
+    外部样式表可以在任何文本编辑器中进行编辑。文件不能包含任何的 html 标签。
+    样式表应该以 .css 扩展名进行保存。
+
+    不要在属性值与单位之间留有空格（如："margin-left: 20 px" ），
+    正确的写法是 "margin-left: 20px" 。
+*/
+hr{
+    color: sienna;
+}
+p{
+    margin-left: 20px;
+}
+body{
+    /*background-image: url("/resources/img/a.png");*/
+}
+h3{
+    color: red;
+    text-align: left;
+    font-size: 8pt;
+}
+
+

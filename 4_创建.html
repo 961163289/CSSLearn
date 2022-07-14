@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4_创建</title>
+
+    <!--浏览器会从文件 mystyle.css 中读到样式声明，并根据它来格式文档。-->
+    <!--<link rel="stylesheet" type="text/css" href="resources/Css/mystyle.css">-->
+
+    <!--
+    内部样式表
+        当单个文档需要特殊的样式时，就应该使用内部样式表。
+        你可以使用 <style> 标签在文档头部定义内部样式表，就像这样:
+    -->
+    <!--
+    <style>
+        hr{
+            color: sienna;
+        }
+        p{
+            margin-left: 20px;
+        }
+        body{
+            background-image: url("/resources/img/b.png");
+            /*background-size: 200px 50px;*/
+        }
+    </style>
+    -->
+
+    <style>
+        h3{
+            text-align: right;
+            font-size: 20pt;
+        }
+    </style>
+
+    <!--注意：如果外部样式放在内部样式的后面，则外部样式将覆盖内部样式。-->
+    <link rel="stylesheet" type="text/css" href="resources/Css/mystyle.css">
+
+</head>
+<body>
+
+<!--
+CSS 创建
+    当读到一个样式表时，浏览器会根据它来格式化 HTML 文档。
+
+如何插入样式表
+    插入样式表的方法有三种:
+        1.外部样式表(External style sheet)
+        2.内部样式表(Internal style sheet)
+        3.内联样式(Inline style)
+
+外部样式表
+    当样式需要应用于很多页面时，外部样式表将是理想的选择。
+    在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观。
+    每个页面使用 <link> 标签链接到样式表。 <link> 标签在（文档的）头部。
+-->
+
+<!--
+内联样式
+    由于要将表现和内容混杂在一起，内联样式会损失掉样式表的许多优势。
+    请慎用这种方法，例如当样式仅需要在一个元素上应用一次时。
+    要使用内联样式，你需要在相关的标签内使用样式（style）属性。
+    Style 属性可以包含任何 CSS 属性。本例展示如何改变段落的颜色和左外边距：
+-->
+<p style="color: sienna;margin-left: 20px">这是一个段落</p>
+
+<h3>这是一个标题</h3>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
