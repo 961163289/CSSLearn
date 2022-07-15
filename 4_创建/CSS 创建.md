@@ -116,7 +116,7 @@ h3
  * <b>Never</b> 永远不要在你的插件中使用 !important
 
 <b>权重计算</b>
-![](resources/img/img2.png)
+![](../resources/img/img2.png)
 解释：
 
 1. 内联样式表的权值最高 1000；
@@ -136,7 +136,7 @@ h3
 结果：在Firefox 下显示为蓝色；在IE 6 下显示为红色；
 
 <b>这里引入一张流行的CSS权重关系图：</b>
-![](resources/img/img3.png)
+![](../resources/img/img3.png)
 
 
 

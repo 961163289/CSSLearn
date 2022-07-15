@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置四个边框的颜色</title>
+    <style>
+        p.one {
+            border-style: solid;
+            border-color: #0000ff;
+        }
+
+        p.two {
+            border-style: solid;
+            border-color: #ff0000 #0000ff;
+        }
+
+        p.three {
+            border-style: solid;
+            border-color: #ff0000 #00ff00 #0000ff;
+        }
+
+        p.four {
+            border-style: solid;
+            border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 250);
+        }
+    </style>
+</head>
+<body>
+
+<p class="one">One-colored border!</p>
+<p class="two">Two-colored border!</p>
+<p class="three">Three-colored border!</p>
+<p class="four">Four-colored border!</p>
+<p><b>注意:</b> "border-color" 属性 如果单独使用则不起作用. 要先使用 "border-style" 属性来设置 borders .</p>
+
+</body>
+</html>
