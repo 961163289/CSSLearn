@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直居中 - 使用 line-height</title>
+    <style>
+        .center {
+            line-height: 200px;
+            height: 200px;
+            border: 3px solid red;
+            text-align: center;
+        }
+
+        /* 如果文本有多行，添加以下代码: */
+        .center p {
+            line-height: 1.5;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<h2>居中</h2>
+<p>以下实例中，我们让 line-height 属性值和 height 属性值相等来设置 div 元素居中：</p>
+
+<div class="center">
+    <p>我是垂直居中的。</p>
+</div>
+
+</body>
+</html>

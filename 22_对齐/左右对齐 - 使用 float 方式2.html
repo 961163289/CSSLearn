@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右对齐 - 使用 float 方式</title>
+    <style>
+        div {
+            border: 3px solid #4CAF50;
+            padding: 5px;
+        }
+        .img1 {
+            float: right;
+        }
+        .clearfix {
+            overflow: auto;
+        }
+        .img2 {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+<p>以下实例图在父元素中溢出，很不美观:</p>
+
+<div>
+    <img class="img1" src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="170"
+         height="170">
+    菜鸟教程 - 学的不仅是技术，更是梦想！！！
+</div>
+
+<p style="clear:right">在父元素上通过添加 clearfix 类，并设置 overflow: auto; 来解决该问题:</p>
+
+<div class="clearfix">
+    <img class="img2" src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="170"
+         height="170">
+    菜鸟教程 - 学的不仅是技术，更是梦想！！！
+</div>
+
+</body>
+</html>

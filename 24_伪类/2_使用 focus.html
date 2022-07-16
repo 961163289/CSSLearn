@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用 :focus</title>
+    <style>
+        input:focus {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<form action="demo-form.php" method="get">
+    First name: <input type="text" name="fname"/><br>
+    Last name: <input type="text" name="lname"/><br>
+    <input type="submit" value="提交">
+</form>
+
+<p><b>注意:</b>仅当 !DOCTYPE 已经声明时 IE8 支持 :focus.</p>
+
+</body>
+</html>
