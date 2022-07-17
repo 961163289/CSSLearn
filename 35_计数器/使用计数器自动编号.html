@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用计数器自动编号</title>
+    <style>
+        body {
+            counter-reset: section;
+        }
+
+        h2::before {
+            counter-increment: section;
+            content: "Section " counter(section) ": ";
+        }
+    </style>
+</head>
+<body>
+
+<h1>使用 CSS 计数器:</h1>
+<h2>HTML 教程</h2>
+<h2>CSS 教程</h2>
+<h2>JavaScript 教程</h2>
+
+<p><b>注意:</b> IE8 需要指定 !DOCTYPE 才可以支持该属性。</p>
+
+</body>
+</html>

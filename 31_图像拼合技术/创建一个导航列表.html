@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建一个导航列表</title>
+    <style>
+        #navlist {
+            position: relative;/*位置设置相对定位，让里面的绝对定位*/
+        }
+
+        /*margin和padding设置为0，列表样式被删除，所有列表项是绝对定位*/
+        #navlist li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            top: 0;
+        }
+
+        /*所有图像的高度是44px*/
+        #navlist li, #navlist a {
+            height: 44px;
+            display: block;
+        }
+
+        #home {
+            /*定位到最左边的方式，以及图像的宽度是46px*/
+            left: 0px;
+            width: 46px;
+            /*定义背景图像和它的位置（左0px，顶部0px）*/
+            background: url("https://www.runoob.com/images/img_navsprites.gif") 0 0;
+        }
+
+        #prev {
+            /*右侧定位63px（＃home宽46px+项目之间的一些多余的空间），宽度为43px。*/
+            left: 63px;
+            width: 43px;
+            /*定义背景图像右侧47px（＃home宽46px+分隔线的1px）*/
+            background: url("https://www.runoob.com/images/img_navsprites.gif") -47px 0;
+        }
+
+        #next {
+            /*右边定位129px(#prev 63px + #prev宽是43px + 剩余的空间), 宽度是43px.*/
+            left: 129px;
+            width: 43px;
+            /*定义背景图像右边91px（＃home 46px+1px的分割线+＃prev宽43px+1px的分隔线）*/
+            background: url("https://www.runoob.com/images/img_navsprites.gif") -91px 0;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="navlist">
+    <li id="home"><a href="/"></a></li>
+    <li id="prev"><a href="/css/"></a></li>
+    <li id="next"><a href="/css/"></a></li>
+</ul>
+
+</body>
+</html>

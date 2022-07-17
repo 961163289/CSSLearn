@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性和值的选择器 - 多值</title>
+    <style>
+        [title~=hello] {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<h2>将适用:</h2>
+<h1 title="hello world">Hello world</h1>
+<p title="student hello">Hello CSS students!</p>
+<hr>
+<h2>将不适用:</h2>
+<p title="student">Hi CSS students!</p>
+
+</body>
+</html>

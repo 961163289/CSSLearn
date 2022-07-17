@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>输入框(input) 聚焦</title>
+    <style>
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            outline: none;/*忽略原聚焦效果*/
+        }
+
+        input[type=text]:focus {
+            background-color: lightblue;
+            border: 3px solid #555;
+        }
+    </style>
+</head>
+<body>
+
+<p>在这个实例中，我们使用了 :focus 选择器（点击输入框时）来给文本输入框添加背景颜色:</p>
+
+<form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" value="John">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+</body>
+</html>

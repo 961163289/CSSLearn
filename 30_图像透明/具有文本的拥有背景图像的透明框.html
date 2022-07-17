@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建一个具有文本的拥有背景图像的透明框</title>
+    <style>
+        div.background {
+            width: 500px;
+            height: 250px;
+            background: url("https://www.runoob.com/try/demo_source/klematis.jpg") repeat;
+            border: 2px solid black;
+        }
+
+        div.transbox {
+            width: 400px;
+            height: 180px;
+            margin: 30px 50px;
+            background: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+        }
+
+        div.transbox p {
+            margin: 30px 40px;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="background">
+    <div class="transbox">
+        <p>
+            这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

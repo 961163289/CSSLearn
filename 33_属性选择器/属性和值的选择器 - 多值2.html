@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性和值的选择器 - 多值</title>
+    <style>
+        [lang|=en] {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+
+<h2>将适用:</h2>
+<p lang="en">Hello!</p>
+<p lang="en-us">Hi!</p>
+<p lang="en-gb">Ello!</p>
+<hr>
+<h2>将不适用:</h2>
+<p lang="us">Hi!</p>
+<p lang="no">Hei!</p>
+
+</body>
+</html>

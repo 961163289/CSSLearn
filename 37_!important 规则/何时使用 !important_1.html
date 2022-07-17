@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>何时使用 !important_1</title>
+    <style>
+        .button {
+            background-color: #8c8c8c;
+            color: white;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        #myDiv a {
+             color: red;
+             background-color: yellow;
+         }
+    </style>
+</head>
+<body>
+
+<p>标准按钮:<a class="button" href="/css/">CSS 教程</a></p>
+
+<div id="myDiv">
+    <p>div 中的一个链接:<a href="/html/">HTML 教程</a></p>
+    <p>div 中的链接按钮:<a href="/html/" class="button">HTML 教程</a></p>
+</div>
+
+</body>
+</html>
